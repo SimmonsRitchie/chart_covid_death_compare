@@ -26,7 +26,8 @@ const ChartDaily = ({
         left: 0,
         bottom: 5,
       }}
-      // width={150}
+      // width={250}
+      // height={40}
       data={data}
     >
       <XAxis
@@ -35,7 +36,10 @@ const ChartDaily = ({
         type="category"
         tickFormatter={formatUnix}
       />
-      <YAxis tick={{ fontSize: 12 }} />
+      <YAxis 
+      width={40}
+      tick={{ fontSize: 12 }}
+       />
       <Tooltip
         content={({ active, payload, label }) => (
           <ChartTooltip
