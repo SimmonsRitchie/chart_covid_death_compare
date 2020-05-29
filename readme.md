@@ -1,5 +1,5 @@
 ### COVID-19 Deaths Compare, PA vs NJ
-A side-by-side comparison of new daily deaths in Pennsylvania and New Jersey.
+A side-by-side comparison of daily coronavirus deaths in Pennsylvania and New Jersey between March 8 and May 28, 2020.
 
 View: [live demo](https://interactives.data.spotlightpa.org/2020/covid-deaths-compare/).
 
