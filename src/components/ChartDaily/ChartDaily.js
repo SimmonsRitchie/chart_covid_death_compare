@@ -24,10 +24,8 @@ const ChartDaily = ({
         top: 0,
         right: 5,
         left: 0,
-        bottom: 5,
+        bottom: 0,
       }}
-      // width={250}
-      // height={40}
       data={data}
     >
       <XAxis
