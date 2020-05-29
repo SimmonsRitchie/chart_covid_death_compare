@@ -22,12 +22,11 @@ const ChartDaily = ({
     <ComposedChart
       margin={{
         top: 0,
-        right: 0,
+        right: 5,
         left: 0,
         bottom: 5,
       }}
-      width={150}
-      height={40}
+      // width={150}
       data={data}
     >
       <XAxis
