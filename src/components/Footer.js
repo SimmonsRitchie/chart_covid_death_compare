@@ -7,24 +7,23 @@ simply remove it entirely.
 
 import React from "react";
 
-const Footer = () => {
-  const spotlight = "https://www.spotlightpa.org/";
+const Footer = ({byline, outlet, outletUrl, source, footnote}) => {
   return (
     <div>
       <div className="footer__container">
         <div>
-          <div className="footer__notes is-size-7">
+          {footnote && <div className="footer__notes is-size-7">
             <i>
-              You can enter a footnote for the widget here if you'd like, explaining some aspect of it that might not be clear.
+              {footnote}
             </i>
-          </div>
+          </div>}
           <div className="footer__byline-source is-size-7 has-text-grey">
-            <span>Source: Source of data.</span>
+            <span>Source: {source}</span>
             <span className="footer__source">
               <span className="footer__separator"></span>
               <span className="footer__byline">
-                Chart: Your Name Here,{" "}
-                <a href={spotlight}>Spotlight PA</a>
+                Chart: {byline},{" "}
+                <a href={outletUrl}>{outlet}</a>
               </span>
             </span>
           </div>

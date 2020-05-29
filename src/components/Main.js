@@ -21,12 +21,18 @@ class Main extends React.Component {
   }
 
   render() {
+
     return (
       <div className="container__outer">
         <div className="container__inner">
           <Header />
-          <Body data={this.props.data}/>
-          <Footer />
+          <Body data={this.props.data} /> 
+          <Footer 
+          byline="Daniel Simmons-Ritchie"
+          source="Pennsylvania data collated by Spotlight PA/Philadelphia Inquirer. New Jersey data collated by the New York Times."
+          outlet="Spotlight PA"
+          outletUrl="https://www.spotlightpa.org/"
+          />
         </div>
       </div>
     );
